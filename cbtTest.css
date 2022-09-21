@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family-Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --lifgt-blue: #005490;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: whitesmoke; */
+    background-image: url(a.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: cbt;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+/* START HERE */
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-box {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 1rem 5rem 1rem 5rem;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+}
+
+.quiz-box h1 {
+    background-color: var(--lifgt-blue);
+    font-size: 4rem;
+    text-align: center;
+    color: var(--white);
+    padding: 1rem 0;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.quiz-box #subject {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-header #instruction {
+
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.quiz-header #instruction .instruction {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--lifgt-blue);
+    margin-bottom: 5px;
+}
+
+.quiz-header #instruction li {
+    color: #777;
+    padding: 5px 0;
+
+}
+
+.quiz-header #progress {
+    color: var(--color-dark-grey);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.quiz-header #count-down {
+    color: var(--lifgt-blue);
+    font-size: 1.6rem;
+    font-weight: 700;
+    /* background-color: #ddd; */
+    padding: 5px;
+    margin: 1px;
+    border-radius: 3px;
+}
+
+.start {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.start #identityNumber {
+    background-color: #ddd;
+    width: 60%;
+    font-size: 1.8rem;
+    color: var(--black);
+    border: 1px solid var(--lifgt-blue);
+    border-radius: 5px;
+    margin: 7px 0;
+    padding: 1rem;
+    outline: none;
+}
+
+.start #startBtn {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--lifgt-blue);
+    text-decoration: none;
+    width: 25%;
+    margin: 7px 0;
+    background-color: #ddd;
+    padding: 1rem;
+    border: 1px solid var(--lifgt-blue);
+    border-radius: 5px;
+    outline: none;
+    transition: all .3s;
+}
+
+#startBtn:hover {
+    background-color: green;
+    color: #fff;
+    border: 1px solid var(--white);
+}
+
+.start .wrongInput {
+    color: red;
+    font-size: 1.5rem;
+}
+
+
+.quiz-box #question {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--lifgt-blue);
+    border: 1px solid #777;
+    border-width: 1px 0;
+    padding: 5px 0;
+}
+
+.buttons {
+    margin: 1.5rem 0 4rem 0;
+}
+
+.btn {
+    text-align: left;
+    background-color: #ddd;
+    width: 100%;
+    font-size: 1.8rem;
+    color: var(--black);
+    border: 1px solid var(--lifgt-blue);
+    border-radius: 5px;
+    margin: 7px 0;
+    padding: 1rem;
+    outline: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--lifgt-blue);
+    color: var(--white);
+}
+
+.btn:active {
+    background-color: green;
+}
+
+#score {
+    color: var(--black);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.quiz-repeat {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.quiz-repeat a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--lifgt-blue);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.quiz-repeat a:hover {
+    background-color: green;
+}
+
+footer {
+    float: right;
+    font-style: italic;
+    color: var(--lifgt-blue);
+    font-weight: 600;
+}
+
+.daigram {
+    height: 100px;
+    width: 150px;
+    margin: 0 1rem;
+}
